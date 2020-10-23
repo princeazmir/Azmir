@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* hader  */
+#header{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transition: 00.7s ease all;
+    overflow: hidden;
+    z-index: 1;
+    height:auto;
+}
+/* hader  */
+
+/* nav_bar */
+.navbar-brand img{
+  width:200px;
+  margin: 0;
+  padding: 0;
+}
+.navbar-brand .logo-dark{
+    display: none;
+}
+.navbar-nav .nav-item a:hover{
+  border-bottom: 1px solid red; 
+  
+}
+/* nav_bar */
+
+/* sticky effeckt  */
+#header.sticky{
+    background-color: rgb(114, 231, 19);
+    color: black;
+    text-transform: uppercase;
+    transition: 00.8s ease all;
+    box-shadow: 5px 1px 4px #2b28288f;
+    
+}
+#header.sticky .logo-dark{
+    display: block;
+}
+#header.sticky .logo-whait{
+    display: none;
+}
+/* sticky effeckt  */
+
+
+/* slider */
+#slider{
+    background-image: url(../img/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    
+}
+.sl_item{
+    margin-top: 20vh;
+}
+.sl_item h1 {
+  text-align: center;
+  font-size:80px;
+  font-weight: bold;
+  color: rgb(255, 8, 8);
+  text-shadow: 2px 4px #000000;
+}
+.sl_item p{
+    text-align: center;
+    max-width: 500px;
+    color: rgb(212, 161, 161);
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.button .btn{
+  
+  border: 1px solid black;
+  margin-top: 50px;
+  background-color: white;
+}
+.button{
+    text-align: center;
+}
+
+/* slider end */
+
+
+/* bounsball start */
+.bounsball{
+    position: relative;
+    height: 35px;
+    width: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    margin: auto;
+    margin-top: 80px;
+    border: 1px solid rgb(255, 255, 255);
+   border-radius: 50px;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-name: bounsball;
+   animation-timing-function: ease;
+}
+.bounsball_inner{
+    background-color: red;
+    height: 15px;
+    width: 3px;
+    border-radius: 80px;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 7.5px;
+    
+    
+
+}
+
+
+/* bounsball end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 996px) {
+    .typeds h1 {
+        font-size: 20px;
+        text-shadow: none;
+        margin-top: 30px;
+        color: brown;
+
+    }
+    .bounsball{
+        margin-top: 50px;
+    }
+        
+}
+
+@media (max-width: 320px) {
+   .sl_item h1{
+       font-size: 50px;
+   }
+   .typeds h1{
+       font-size: 20px;
+   }
+
+}
+
+
+
+
+
+
+
+
+@keyframes bounsball {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+}
